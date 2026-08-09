@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Core SEO Meta Tags -->
+    <title>Red Rhino Web Development | Custom Websites, Graphic Design & AI Integration</title>
+    <meta name="description" content="Red Rhino Web Development builds high-performance custom websites, e-commerce platforms, graphic design assets with Photoshop 7, and custom AI integrations.">
+    <meta name="keywords" content="Red Rhino Web Development, custom web development, graphic design, Photoshop 7 design, AI integration, e-commerce development, custom web app development, SEO web design">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="Red Rhino Web Development">
+    <link rel="canonical" href="https://yourdomain.com/">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Red Rhino Web Development | High-Performance Digital Solutions">
+    <meta property="og:description" content="Charge ahead with bespoke web design, classic Photoshop 7 graphic design, and cutting-edge AI integrations built for high conversions.">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:site_name" content="Red Rhino Web Development">
+    <meta property="og:image" content="https://yourdomain.com/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Red Rhino Web Development | High-Performance Digital Solutions">
+    <meta name="twitter:description" content="Charge ahead with custom web design, classic Photoshop 7 graphic design, and cutting-edge AI integrations.">
+    <meta name="twitter:image" content="https://yourdomain.com/logo.png">
+
+    <!-- Schema.org Rich Snippets JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://yourdomain.com/#organization",
+      "name": "Red Rhino Web Development",
+      "image": "https://yourdomain.com/logo.png",
+      "logo": "https://yourdomain.com/logo.png",
+      "url": "https://yourdomain.com",
+      "email": "contact@redrhinoweb.com",
+      "telephone": "+1-800-555-0199",
+      "priceRange": "$$",
+      "description": "Red Rhino Web Development provides custom web design, e-commerce engineering, Photoshop 7 graphic design, and bespoke AI application integration.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "37.7749",
+        "longitude": "-122.4194"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://twitter.com/redrhinoweb",
+        "https://github.com/redrhinoweb",
+        "https://linkedin.com/company/redrhinoweb"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Digital Services Catalog",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Web Development",
+              "description": "High-speed custom web applications and responsive web development."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Graphic Design & Photoshop 7",
+              "description": "Pixel-perfect raster art, branding assets, and specialized legacy graphic design."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Integration & Automation",
+              "description": "Integration of custom LLMs, generative AI tools, and intelligent workflow automation."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-Commerce Engineering",
+              "description": "Scalable online stores engineered for high conversion rates and secure payments."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-red: #D3122A;
+            --primary-red-hover: #B00E22;
+            --dark-bg: #0C0D10;
+            --card-bg: #16181E;
+            --border-color: #272A34;
+            --text-main: #F1F3F9;
+            --text-muted: #9CA3AF;
+            --accent-silver: #E2E8F0;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            font-family: var(--font-family);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Utility */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.85rem 1.8rem;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-red);
+            color: #ffffff;
+            border: 2px solid var(--primary-red);
+            box-shadow: 0 4px 15px rgba(211, 18, 42, 0.4);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-red-hover);
+            border-color: var(--primary-red-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-main);
+            border: 2px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--text-main);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-silver);
+        }
+
+        .section-title h2 span {
+            color: var(--primary-red);
+        }
+
+        .section-title p {
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        /* Header / Navbar */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(12, 13, 16, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-container img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 900;
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo-text .red {
+            color: var(--primary-red);
+        }
+
+        .logo-text .rhino {
+            color: var(--accent-silver);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-red);
+        }
+
+        /* Mobile Hamburger Icon */
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .mobile-toggle span {
+            display: block;
+            width: 26px;
+            height: 3px;
+            background-color: var(--text-main);
+            margin: 5px 0;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hamburger Open Animation State */
+        .mobile-toggle.active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .mobile-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .mobile-toggle.active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 180px 0 100px;
+            position: relative;
+            background: radial-gradient(circle at 80% 20%, rgba(211, 18, 42, 0.15) 0%, transparent 50%);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: rgba(211, 18, 42, 0.1);
+            color: var(--primary-red);
+            border: 1px solid rgba(211, 18, 42, 0.3);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            line-height: 1.1;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            color: var(--primary-red);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 650px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.5rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--primary-red);
+            font-weight: 800;
+        }
+
+        .stat-item p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-top: 0.25rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 2.5rem 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--primary-red);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(211, 18, 42, 0.4);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-red);
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Advantage / About Section */
+        .advantage {
+            padding: 100px 0;
+            background: rgba(22, 24, 30, 0.5);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .advantage-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .advantage-text h2 {
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .advantage-text h2 span {
+            color: var(--primary-red);
+        }
+
+        .advantage-text p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .feature-item span {
+            color: var(--primary-red);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* Contact Section & Tech Stack Grid */
+        .contact {
+            padding: 100px 0;
+        }
+
+        .contact-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 3.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 800;
+        }
+
+        .contact-info p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        /* Tech Stack Logos Grid */
+        .tech-stack-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .tech-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .tech-item img {
+            width: 100%;
+            max-width: 90px;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            transition: transform 0.25s ease;
+        }
+
+        .tech-item img:hover {
+            transform: translateY(-4px);
+        }
+
+        .tech-item span {
+            font-size: 0.85rem;
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            background-color: var(--dark-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-red);
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Formspree Helper Messaging Styles */
+        .fs-status-success {
+            color: #22c55e;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 6px;
+        }
+
+        .fs-status-error {
+            color: var(--primary-red);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            background: rgba(211, 18, 42, 0.1);
+            border: 1px solid rgba(211, 18, 42, 0.3);
+            border-radius: 6px;
+        }
+
+        .field-error {
+            color: var(--primary-red);
+            font-size: 0.8rem;
+            margin-top: 0.3rem;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 900px) {
+            .advantage-grid, .contact-box {
+                grid-template-columns: 1fr;
+            }
+            .stats-bar {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 75%;
+                max-width: 300px;
+                height: 100vh;
+                background-color: var(--card-bg);
+                border-left: 1px solid var(--border-color);
+                flex-direction: column;
+                justify-content: center;
+                gap: 2.5rem;
+                transition: right 0.3s ease-in-out;
+                box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+            }
+
+            .nav-links.nav-active {
+                right: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .stats-bar {
+                grid-template-columns: 1fr;
+            }
+            .hero-buttons {
+                flex-direction: column;
+            }
+            .tech-stack-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container">
+            <nav aria-label="Main Navigation">
+                <a href="#" class="logo-container" aria-label="Red Rhino Web Development Homepage">
+                    <img src="logo.png" alt="Red Rhino Web Development Official Logo" title="Red Rhino Web Development" width="180" height="50" loading="eager">
+                    <span class="logo-text"><span class="red">RED</span> <span class="rhino">RHINO</span></span>
+                </a>
+                
+                <!-- Mobile Navigation Toggle Button -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#services" class="nav-item">Services</a></li>
+                    <li><a href="#about" class="nav-item">About Us</a></li>
+                    <li><a href="#contact" class="nav-item">Contact Us</a></li>
+                    <li><a href="#contact" class="btn btn-primary nav-item" style="padding: 0.5rem 1.2rem;">Get Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-tag">High-Performance Web Engineering</span>
+                <h1 id="hero-heading">Charge Ahead with <span>Custom</span> Web Development</h1>
+                <p>Red Rhino builds high-converting, custom websites, bespoke digital applications, graphic design solutions, and integrated AI automation designed to scale your business.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                    <a href="#services" class="btn btn-secondary">Explore Services</a>
+                </div>
+            </div>
+
+            <!-- Key Metrics -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <h3>99.9%</h3>
+                    <p>Uptime & Reliability</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2.5x</h3>
+                    <p>Average Speed Boost</p>
+                </div>
+                <div class="stat-item">
+                    <h3>150+</h3>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Custom Code Base</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services" aria-labelledby="services-heading">
+        <div class="container">
+            <div class="section-title">
+                <h2 id="services-heading">Full-Stack <span>Digital Services</span></h2>
+                <p>Engineered for speed, search visibility, and maximum conversions.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">⚡</div>
+                    <h3>Custom Web Development</h3>
+                    <p>Tailor-made, responsive web development built from scratch with clean, semantic HTML5 and optimized CSS for speed and SEO optimization.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🎨</div>
+                    <h3>Graphic Design & Photoshop 7</h3>
+                    <p>Pixel-perfect raster art, brand asset creation, logo design, and specialized graphic design using classic Photoshop 7 precision techniques.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🤖</div>
+                    <h3>AI Integration & Automation</h3>
+                    <p>Embed custom LLM workflows, generative AI features, and automated business processes directly into your modern web application.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🛒</div>
+                    <h3>E-Commerce Engineering</h3>
+                    <p>High-converting online stores built for fast load times, frictionless payment processing, scalable inventory management, and SEO dominance.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🎯</div>
+                    <h3>UI/UX & Web Design</h3>
+                    <p>Intuitive, visually striking web designs crafted to guide user journey, maximize engagement, and turn page visitors into long-term clients.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">⚙️</div>
+                    <h3>Web Applications & APIs</h3>
+                    <p>Scalable web applications, client portal systems, and custom REST/GraphQL API integrations built to align with your exact business model.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantage / About Section -->
+    <section class="advantage" id="about" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="advantage-grid">
+                <div class="advantage-text">
+                    <h2 id="about-heading">Why Partner With <span>Red Rhino</span>?</h2>
+                    <p>In a digital space overrun with bloated website builders and slow templates, Red Rhino Web Development delivers fast, scalable software built to outperform competitors on search engines and mobile devices.</p>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <span aria-hidden="true">✓</span>
+                            <div>
+                                <strong>Pixel-Perfect Visual Design:</strong> High-impact graphic design tailored with classic Photoshop tools and cutting-edge AI utilities.
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <span aria-hidden="true">✓</span>
+                            <div>
+                                <strong>Search Engine Optimized Code:</strong> Optimized semantic structure built to meet Core Web Vitals and achieve higher Google rankings.
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <span aria-hidden="true">✓</span>
+                            <div>
+                                <strong>Scalable Technical Architecture:</strong> Clean codebase designed to expand with your business requirements without breaking performance.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 3rem; border-radius: 12px; text-align: center;">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Ready to Grow Your Brand?</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Let's build a fast, high-converting digital presence engineered for results.</p>
+                    <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h2 id="contact-heading">GET IN TOUCH</h2>
+                    <p>Have a project in mind? Fill out the form or drop us a line to discuss how Red Rhino can build your next digital asset.</p>
+                    
+                    <!-- Tech Stack Badges Container -->
+                    <div class="tech-stack-grid" aria-label="Supported Technologies">
+                        <div class="tech-item">
+                            <img src="html-2.png" alt="HTML5 Web Development" width="90" height="90" loading="lazy">
+                            <span>HTML</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="css.png" alt="CSS3 Styling" width="90" height="90" loading="lazy">
+                            <span>CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="js.jpg" alt="JavaScript Scripting" width="90" height="90" loading="lazy">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="react.png" alt="React Framework" width="90" height="90" loading="lazy">
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formspree Integrated Form -->
+                <div>
+                    <div data-fs-success class="fs-status-success"></div>
+                    <div data-fs-error class="fs-status-error"></div>
+
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required data-fs-field>
+                            <span data-fs-error="name" class="field-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required data-fs-field>
+                            <span data-fs-error="email" class="field-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project goals and timeline..." required data-fs-field></textarea>
+                            <span data-fs-error="message" class="field-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" data-fs-submit-btn>Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Red Rhino Web Development. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Mobile Drawer Menu Toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.getElementById('nav-links');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('nav-active');
+        });
+
+        // Close Mobile Menu when a link is clicked
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (navLinks.classList.contains('nav-active')) {
+                    mobileToggle.classList.remove('active');
+                    navLinks.classList.remove('nav-active');
+                }
+            });
+        });
+
+        // Formspree Integration Setup
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#contact-form', formId: 'xgawoddn' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
